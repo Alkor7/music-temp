@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style_music_bpm.css">
+	<meta name="description" content="Сервис для определения темпа музыки (BPM)">
+	<title>Узнай темп твоей любимой мызыки</title>
+</head>
+
+<body>
+
+	<header>Узнай темп <br> твоей любимой мызыки</header>
+
+	<main class="aboutBPM">
+		<strong>BPM</strong> (bpm, англ. beats per minute, ударов в минуту) — показатель, 
+		определяющий скорость исполнения или воспроизведения композиции. 
+		BPM — это количество четвертных нот в минуту, а говоря простым языком - 
+		сколько раз за минуту мы слышим удары осноного ритмического инструмента.
+		Ритмичность музыки определяется определенным BPM показателем.
+	</main>
+
+	<div class="typesBPM">
+		<ul>Диапозоны BPM для спорта:
+			<li>060-120 BPM — растяжка, йога, пилатес</li>
+			<li>120-132 BPM — общеукрепляющая тренировка</li>
+			<li>132-144 BPM — фитнес и степ-тренировки</li>
+			<li>144-190 BPM — бег и кардио-комплексы</li>
+		</ul>
+	</div>
+
+	<section>	
+		<div id="calcBPM">	BPM <div id=yourBPM>_ _ _</div> </div>
+		<div><button class="buttons" onclick="RhythmCalc()">Нажимай в ритм</button></div>
+		<div>
+			Нажимайте в такт музыке на зеленую мнопку (или на пробел). <br>
+			Для сброса измерений и начала нового отсчета нажмите "Сброс" (или кнопку DEL на клавиатуре).<br>
+			<button class="buttons" id="buttonReset"onclick="RhythmReset()">Сброс</button>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="script_music_bpm.js" ></script>
+
+</body>
+</html>
