@@ -12,29 +12,35 @@
 
 	<header>Узнай темп <br> твоей любимой мызыки</header>
 
-	<main class="aboutBPM">
-		<strong>BPM</strong> (bpm, англ. beats per minute, ударов в минуту) — показатель, 
-		определяющий скорость исполнения или воспроизведения композиции. 
+ <input class="hide" id="aboutBPM" type="checkbox">
+    <label for="aboutBPM"><h3>Что такое BPM?</h3></label>
+    <div id="about">
+        <strong>BPM</strong> (bpm, англ. beats per minute, ударов в минуту) - 
+        показатель, определяющий скорость исполнения или воспроизведения композиции. 
 		BPM — это количество четвертных нот в минуту, а говоря простым языком - 
 		сколько раз за минуту мы слышим удары осноного ритмического инструмента.
 		Ритмичность музыки определяется определенным BPM показателем.
-	</main>
+    </div>
 
-	<div class="typesBPM">
-		<ul>Диапозоны BPM для спорта:
+
+ <input class="hide" id="typesBPM" type="checkbox">
+    <label for="typesBPM"><h3>Темпы BPM для спорта</h3></label>
+    <div>
+       <ul> 
 			<li>060-120 BPM — растяжка, йога, пилатес</li>
-			<li>120-132 BPM — общеукрепляющая тренировка</li>
+			<li>120-132 BPM — обычная тренировка</li>
 			<li>132-144 BPM — фитнес и степ-тренировки</li>
 			<li>144-190 BPM — бег и кардио-комплексы</li>
 		</ul>
-	</div>
+    </div>
 
 	<section>	
 		<div id="calcBPM">	BPM <div id=yourBPM>_ _ _</div> </div>
 		<div><button class="buttons" onclick="RhythmCalc()">Нажимай в ритм</button></div>
 		<div>
 			Нажимайте в такт музыке на зеленую мнопку (или на пробел). <br>
-			Для сброса измерений и начала нового отсчета нажмите "Сброс" (или кнопку DEL на клавиатуре).<br>
+			Для сброса измерений и начала нового отсчета нажмите "Сброс" 
+			(или кнопку DEL на клавиатуре). <br>
 			<button class="buttons" id="buttonReset"onclick="RhythmReset()">Сброс</button>
 		</div>
 	</section>

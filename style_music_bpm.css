@@ -3,7 +3,7 @@ body{ background-image: url(hexellence.png);
 
  header { 	font-size: 2em; text-align: center;}
 
- .aboutBPM { text-align: justify;margin: 2%;}
+ #about { text-align: justify;margin: 2%;}
 
  section { display: block; text-align: center;}
 
@@ -25,3 +25,12 @@ body{ background-image: url(hexellence.png);
  #calcBPM { margin: 2%; font-size: 200%;}
 
  #yourBPM { display: inline-block; font-weight: 700;}
+
+.hide, 
+.hide + label ~ div {
+    display: none;
+}
+
+.hide:checked + label + div {
+    display: block; 
+  }
