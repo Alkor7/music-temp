@@ -12,8 +12,19 @@
 
 	<header>Узнай темп <br> твоей любимой мызыки</header>
 
+	<section>	
+		<div id="calcBPM"> <i>BPM</i> <div id=yourBPM>_ _ _</div> </div>
+		<div><button class="buttons" onclick="RhythmCalc()">Задать темп</button></div>
+		<div>
+			Нажимайте в такт музыке на зеленую мнопку <br> (или на пробел). <br>
+			Для сброса измерений и начала нового отсчета нажмите "Сброс" <br> 
+			(или кнопку DEL на клавиатуре). <br>
+			<button class="buttons" id="buttonReset"onclick="RhythmReset()">Сброс</button>
+		</div>
+	</section>
+
  <input class="hide" id="aboutBPM" type="checkbox">
-    <label for="aboutBPM"><h3>Что такое BPM?</h3></label>
+    <label for="aboutBPM"><h3><img class="expand_all" src="expand_all.png"> Что такое BPM?</h3></label>
     <div id="about">
         <strong>BPM</strong> (bpm, англ. beats per minute, ударов в минуту) - 
         показатель, определяющий скорость исполнения или воспроизведения композиции. 
@@ -22,9 +33,8 @@
 		Ритмичность музыки определяется определенным BPM показателем.
     </div>
 
-
  <input class="hide" id="typesBPM" type="checkbox">
-    <label for="typesBPM"><h3>Темпы BPM для спорта</h3></label>
+    <label for="typesBPM"><h3><img class="expand_all" src="expand_all.png"> Темпы BPM для спорта</h3></label>
     <div>
        <ul> 
 			<li>060-120 BPM — растяжка, йога, пилатес</li>
@@ -33,17 +43,6 @@
 			<li>144-190 BPM — бег и кардио-комплексы</li>
 		</ul>
     </div>
-
-	<section>	
-		<div id="calcBPM">	BPM <div id=yourBPM>_ _ _</div> </div>
-		<div><button class="buttons" onclick="RhythmCalc()">Нажимай в ритм</button></div>
-		<div>
-			Нажимайте в такт музыке на зеленую мнопку (или на пробел). <br>
-			Для сброса измерений и начала нового отсчета нажмите "Сброс" 
-			(или кнопку DEL на клавиатуре). <br>
-			<button class="buttons" id="buttonReset"onclick="RhythmReset()">Сброс</button>
-		</div>
-	</section>
 
 	<script type="text/javascript" src="script_music_bpm.js" ></script>
 

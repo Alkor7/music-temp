@@ -11,7 +11,7 @@ function RhythmCalc() {
 	timeBeat = (Date.now() - timeStart);	// Считаем количество миллисекунд от старта
 	beatsResult = Math.floor(60/(timeBeat/1000/beatsCount)); // Целочисленно делим ВРЕМЯ на КОЛИЧЕСТВО 
 	if (beatsResult%2 == 1) { beatsResult++;}	// Округляем до четного числа 
-	console.log ("Нажатий= ", beatsCount, " Прошло=", timeBeat, " БПМ=", beatsResult);
+	console.log ("Нажатий= ", beatsCount, " Прошло ms=", timeBeat, " BPM=", beatsResult);
 	if (beatsCount >=1) { 
 		document.querySelector('#yourBPM').innerText = beatsResult;
 	}
