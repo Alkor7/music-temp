@@ -4,17 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style_music_bpm.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<meta name="description" content="Сервис для определения темпа музыки (BPM)">
-	<title>Узнай темп твоей любимой мызыки</title>
+	<title>Узнай темп твоей любимой музыки</title>
 </head>
 
 <body>
 
-	<header>Узнай темп <br> твоей любимой мызыки</header>
+	<header>Узнай темп <br> твоей любимой музыки</header>
 
 	<section>	
-		<div id="calcBPM"> <i>BPM</i> <div id=yourBPM>_ _ _</div> </div>
-		<div><button class="buttons" onclick="RhythmCalc()">Задать темп</button></div>
+		<progress id="progressBar" max = "100" value = "0"></progress>
+		<div id="calcBPM"> <i>BPM</i> <div class="animate__animated" id="yourBPM">_ _ _</div> </div>
+		<div><button class="buttons" id="buttonTemp" onclick="RhythmCalc()">Задать темп</button></div>
 		<div>
 			Нажимайте в такт музыке на зеленую мнопку <br> (или на пробел). <br>
 			Для сброса измерений и начала нового отсчета нажмите "Сброс" <br> 
@@ -24,9 +26,9 @@
 	</section>
 
  <input class="hide" id="aboutBPM" type="checkbox">
-    <label for="aboutBPM"><h3><img class="expand_all" src="expand_all.png"> Что такое BPM?</h3></label>
+    <label for="aboutBPM"><h3><img class="expand_all" src="expand_all.png">Что такое BPM?</h3></label>
     <div id="about">
-        <strong>BPM</strong> (bpm, англ. beats per minute, ударов в минуту) - 
+        <strong>BPM </strong> (bpm, англ. beats per minute, ударов в минуту) - 
         показатель, определяющий скорость исполнения или воспроизведения композиции. 
 		BPM — это количество четвертных нот в минуту, а говоря простым языком - 
 		сколько раз за минуту мы слышим удары осноного ритмического инструмента.
@@ -34,7 +36,7 @@
     </div>
 
  <input class="hide" id="typesBPM" type="checkbox">
-    <label for="typesBPM"><h3><img class="expand_all" src="expand_all.png"> Темпы BPM для спорта</h3></label>
+    <label for="typesBPM"><h3><img class="expand_all" src="expand_all.png">Темпы BPM для спорта</h3></label>
     <div>
        <ul> 
 			<li>060-120 BPM — растяжка, йога, пилатес</li>
@@ -44,7 +46,7 @@
 		</ul>
     </div>
 
-	<script type="text/javascript" src="script_music_bpm.js" ></script>
+	<script type="text/javascript" src="script_music_bpm.js"></script>
 
 </body>
 </html>
