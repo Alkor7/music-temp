@@ -30,7 +30,7 @@ function RhythmReset() { // Сброс всех параметров и счет
 	beatsCount = -1; // сбросили счетчик нажатий
 	beatsResult = ""; // обнулили результат
 	progressCount = 0; // прогресс-бар на ноль 
-	progressBarDOM.value = progressCount; // заполнили прогресс-бар на ноль
+	progressBarDOM.value = progressCount; // сбросили прогресс-бар на ноль
 	yourBPM_DOM.classList.remove('animate__flip'); // удалили анимацию 
 	yourBPM_DOM.classList.add('animate__fadeOutUp');
 	yourBPM_DOM.style.color = "#777";
